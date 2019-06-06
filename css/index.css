@@ -1,6 +1,6 @@
 .buttonstyle {
   border-radius: 14px;
-  background-color: teal;
+  background-color: #17A2B8;
   color: white;
   width: 198px;
   height: 45px;
@@ -10,7 +10,7 @@
 }
 .btn {
   border-radius: 14px;
-  background-color: teal;
+  background-color: #17A2B8;
   color: white;
   width: 198px;
   height: 45px;
@@ -188,13 +188,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.border {
-  border: 1px solid red;
-}
-.alignnavitems {
-  display: flex;
-  align-items: flex-end;
-}
 .topnav {
   width: 100%;
   border-bottom: 2px dashed silver;
@@ -220,6 +213,28 @@ img {
   padding: 20px;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .topnav {
+    height: 89px;
+  }
+  .topnav .navwide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topnav h1 {
+    font-size: 3.1rem;
+    padding-top: 17px;
+  }
+  .topnav a {
+    padding-bottom: 0;
+    padding-top: 16px;
+  }
+  .topnav .links {
+    width: 426px;
+    justify-content: space-between;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -242,6 +257,20 @@ img {
   padding-bottom: 22px;
   border-bottom: 2px dashed silver;
 }
+@media (max-width: 500px) {
+  .home .introsection {
+    align-items: center;
+  }
+  .home .introsection img {
+    max-width: 90%;
+  }
+  .home .introsection h2 {
+    padding-right: 32%;
+  }
+  .home .introsection p {
+    padding-left: 5%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -259,6 +288,23 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .content-section .text-content {
+  width: 95%;
+  padding-left: 5%;
+}
+.home .content-section .img-content {
+  padding-left: 5%;
+}
+.home .content-section img {
+  height: 337px;
+  max-width: none;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -271,12 +317,33 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .inverse-content .text-content {
+    width: 95%;
+    padding-left: 6%;
+  }
+  .home .inverse-content .img-content {
+    padding-left: 5%;
+  }
+  .home .inverse-content img {
+    height: 335px;
+    max-width: none;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;

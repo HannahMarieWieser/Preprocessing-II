@@ -1,14 +1,18 @@
 // Navigation Styles here
 
 
-.border{
+.border(){
     border: 1px solid red;
 }
 
-.alignnavitems{
+.alignnavitems(){
     display: flex;
     align-items: flex-end
 }
+
+
+
+//navcode
 
 .topnav {
     width: 100%;
@@ -40,4 +44,34 @@
         padding-bottom:10px;
     }
 
+    @media @mobile{
+        height: 89px;
+
+        .navwide{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
+        h1{
+            font-size: 3.1rem;
+            padding-top: 17px;
+        }
+
+        a{
+            padding-bottom: 0;
+            padding-top: 16px;
+        }
+
+
+        .links{
+            width: 426px;
+            justify-content: space-between;
+
+        }
+            
+
+    }
 }
+     
