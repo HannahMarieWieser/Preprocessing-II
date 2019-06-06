@@ -1,13 +1,3 @@
-.buttonstyle {
-  border-radius: 14px;
-  background-color: #17A2B8;
-  color: white;
-  width: 198px;
-  height: 45px;
-  text-align: center;
-  font-size: 18px;
-  padding: 15px 32px;
-}
 .btn {
   border-radius: 14px;
   background-color: #17A2B8;
@@ -293,17 +283,17 @@ img {
     display: flex;
     flex-direction: column;
   }
-}
-.home .content-section .text-content {
-  width: 95%;
-  padding-left: 5%;
-}
-.home .content-section .img-content {
-  padding-left: 5%;
-}
-.home .content-section img {
-  height: 337px;
-  max-width: none;
+  .home .content-section .text-content {
+    width: 95%;
+    padding-left: 5%;
+  }
+  .home .content-section .img-content {
+    padding-left: 5%;
+  }
+  .home .content-section img {
+    height: 337px;
+    max-width: none;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
