@@ -1,1 +1,77 @@
 // Navigation Styles here
+
+
+.border(){
+    border: 1px solid red;
+}
+
+.alignnavitems(){
+    display: flex;
+    align-items: flex-end
+}
+
+
+
+//navcode
+
+.topnav {
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    height: 74px;
+    // .border();
+
+    .navwide{
+        display:flex;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        // .border();
+        justify-content: space-between;
+        .alignnavitems();
+    }
+
+    .links{
+        // .border;
+        .alignnavitems();
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: #212529;
+        font-size: 1.6rem;
+        padding: 20px;
+        padding-bottom:10px;
+    }
+
+    @media @mobile{
+        height: 89px;
+
+        .navwide{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
+        h1{
+            font-size: 3.1rem;
+            padding-top: 17px;
+        }
+
+        a{
+            padding-bottom: 0;
+            padding-top: 16px;
+        }
+
+
+        .links{
+            width: 426px;
+            justify-content: space-between;
+
+        }
+            
+
+    }
+}
+     
